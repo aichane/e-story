@@ -1,0 +1,8 @@
+[main]
+host = https://www.transifex.com
+
+[e-story.python]
+file_filter = estory/i18n/<lang>/LC_MESSAGES/e-story.po
+source_file = estory/i18n/e-story.pot
+source_lang = en
+

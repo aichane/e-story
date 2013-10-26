@@ -1,0 +1,15 @@
+build/
+cache/
+estory/static/.webassets-cache/
+estory/static/bower/
+estory/static/css/site-less.css
+estory/static/css/site.min.css
+development-*.ini
+dist/
+projects-*.ini
+*.egg-info
+*.mo
+*.pyc
+*.pyo
+*~
+
