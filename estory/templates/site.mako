@@ -147,6 +147,7 @@ ${conf['realm']}
     % for url in conf['assets']['site-js'].urls():
     <script src="${url}"></script>
     % endfor
+    <script src="/bower/TimelineJS/build/js/storyjs-embed.js"></script>
     ## You must include this on every page which uses navigator.id functions. Because Persona is still in development,
     ## you should not self-host the include.js file.
     <script src="https://login.persona.org/include.js"></script>
