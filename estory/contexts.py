@@ -241,7 +241,7 @@ class Ctx(conv.State):
 
 
 null_ctx = Ctx()
-null_ctx.lang = ['en-US', 'en']
+null_ctx.lang = ['fr-FR', 'fr']
 
 
 def new_translator(domain, localedir, languages, fallback = None):
