@@ -7,7 +7,7 @@
 #     Emmanuel Raviart <emmanuel@raviart.com>
 #
 # Copyright (C) 2013 Anael Ichane & Emmanuel Raviart
-# http://github.com/etalab/e-story
+# http://github.com/aichane/e-story
 #
 # This file is part of e-story.
 #
@@ -56,13 +56,13 @@ setup(
     version = '0.1dev',
 
     author = 'Anael Ichane & Emmanuel Raviart',
-    author_email = 'e-story@etalab2.fr',
+    author_email = 'team@e-story.fr',
     classifiers = [classifier for classifier in classifiers.split('\n') if classifier],
     description = doc_lines[0],
     keywords = 'history lessons online opendata server web',
     license = 'http://www.fsf.org/licensing/licenses/agpl-3.0.html',
     long_description = '\n'.join(doc_lines[2:]),
-    url = 'http://github.com/etalab/e-story',
+    url = 'http://github.com/aichane/e-story',
 
     data_files = [
         ('share/locale/fr/LC_MESSAGES', ['estory/i18n/fr/LC_MESSAGES/e-story.mo']),

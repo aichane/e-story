@@ -3,7 +3,7 @@
  * By: Emmanuel Raviart <emmanuel@raviart.com>
  *
  * Copyright (C) 2013 Anael Ichane & Emmanuel Raviart
- * http://github.com/etalab/e-story
+ * http://github.com/aichane/e-story
  *
  * This file is part of e-story.
  *

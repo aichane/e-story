@@ -6,7 +6,7 @@
 ##     Emmanuel Raviart <emmanuel@raviart.com>
 ##
 ## Copyright (C) 2013 Anael Ichane & Emmanuel Raviart
-## http://github.com/etalab/e-story
+## http://github.com/aichane/e-story
 ##
 ## This file is part of e-story.
 ##
@@ -25,7 +25,7 @@
 
 
 <%!
-from ckanofworms import conf, model, texthelpers, urls
+from estory import conf, model, texthelpers, urls
 %>
 
 
@@ -38,14 +38,14 @@ from ckanofworms import conf, model, texthelpers, urls
             else model.Lesson.get_class_front_url(ctx)}"/>
     <link href="${urls.get_full_url(ctx, 'api', '1', 'lessons', **urls.relative_query(inputs))}" rel="self"/>
 ##    <author>
-##        <name>${_('CKAN-of-Worms contributors')}</name>
-##        <email>${conf['wenoit.email']}</email>
-##        <uri>${conf['wenoit.url']}</uri>
+##        <name>${_('e-story team')}</name>
+##        <email>${conf['e-story.email']}</email>
+##        <uri>${conf['e-story.url']}</uri>
 ##    </author>
 ##    % for tag in (tags or []):
 ##          <category term="${tag}"/>
 ##    % endfor
-    <generator uri="http://github.com/etalab/ckan-of-worms">CKAN-of-Worms</generator>
+    <generator uri="https://github.com/aichane/e-story">e-story</generator>
     <rights>
         This feed is licensed under the Open Licence ${'<http://www.data.gouv.fr/Licence-Ouverte-Open-Licence>'}.
     </rights>

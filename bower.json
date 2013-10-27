@@ -14,7 +14,7 @@
     "web"
   ],
   "license": "AGPL",
-  "homepage": "http://github.com/etalab/e-story",
+  "homepage": "https://github.com/aichane/e-story",
   "private": true,
   "ignore": [
     "**/.*",
