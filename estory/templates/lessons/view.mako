@@ -139,7 +139,7 @@ ${lesson.get_title(ctx)} - ${parent.title_content()}
     % if items:
         <div id="lesson-timeline"></div>
         % for item in items:
-        <div class="modal fade" id="${item.slug}-modal" tabindex="-1" role="dialog" aria-labelledby="${
+        <div class="modal fade" data-backdrop="static" data-keyboard="false" id="${item.slug}-modal" tabindex="-1" role="dialog" aria-labelledby="${
                 item.slug}-modal-title" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
