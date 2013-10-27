@@ -61,6 +61,33 @@ log = logging.getLogger(__name__)
 
 
 @wsgihelpers.wsgify
+def admin_activate(req):
+    ctx = contexts.Ctx(req)
+    lesson = ctx.node
+
+    user = model.get_user(ctx)
+    if user is None:
+        return wsgihelpers.unauthorized(ctx,
+            explanation = ctx._("Edition unauthorized"),
+            message = ctx._("You can not activate a lesson."),
+            title = ctx._('Operation denied'),
+            )
+    if user._id != lesson.user_id and not user.admin:
+        return wsgihelpers.forbidden(ctx,
+            explanation = ctx._("Edition forbidden"),
+            message = ctx._("You can not activate a lesson."),
+            title = ctx._('Operation denied'),
+            )
+
+    session = ctx.session
+    session.lesson_id = lesson._id
+    session.save(ctx, safe = True)
+
+    # View lesson.
+    return wsgihelpers.redirect(ctx, location = lesson.get_admin_url(ctx))
+
+
+@wsgihelpers.wsgify
 def admin_delete(req):
     ctx = contexts.Ctx(req)
     lesson = ctx.node
@@ -650,6 +677,7 @@ def route_admin(environ, start_response):
 
     router = urls.make_router(
         ('GET', '^/?$', admin_view),
+        (('GET', 'POST'), '^/activate/?$', admin_activate),
         (('GET', 'POST'), '^/delete/?$', admin_delete),
         (('GET', 'POST'), '^/edit/?$', admin_edit),
         )

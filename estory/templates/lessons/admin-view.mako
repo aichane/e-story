@@ -72,6 +72,14 @@ def get_start_date(item):
         <%self:view_fields/>
         <div class="btn-toolbar">
 ##            <a class="btn btn-default" href="${urls.get_url(ctx, 'api', 1, 'lessons', lesson.slug)}">${_(u'JSON')}</a>
+<%
+    session = ctx.session
+%>\
+    % if session is not None and session.lesson_id != lesson._id:
+            <a class="btn btn-success" href="${lesson.get_admin_url(ctx, 'activate')}">${_(u'Activate')}</a>
+    % else:
+            <a class="btn btn-success" href="${model.Item.get_admin_class_url(ctx)}">${_(u'Add Items')}</a>
+    % endif
             <a class="btn btn-default" href="${lesson.get_admin_url(ctx, 'edit')}">${_(u'Edit')}</a>
             <a class="btn btn-danger"  href="${lesson.get_admin_url(ctx, 'delete')}"><span class="glyphicon glyphicon-trash"></span> ${_('Delete')}</a>
         </div>
@@ -221,7 +229,7 @@ ${lesson.get_title(ctx)} - ${parent.title_content()}
             % endif
                             </div>
                             <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>

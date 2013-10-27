@@ -49,7 +49,7 @@ from estory import model, texthelpers, urls
     lesson = session.get_lesson(ctx) if session is not None else None
 %>\
     % if lesson is not None:
-            <a class="btn btn-default" href="${item.get_admin_url(ctx, 'toggle-lesson')}">${
+            <a class="btn btn-success" href="${item.get_admin_url(ctx, 'toggle-lesson')}">${
                 _(u'Remove from Lesson') if item._id in (lesson.items_id or []) else _(u'Add to Lesson')}</a>
     % endif
 ##            <a class="btn btn-default" href="${urls.get_url(ctx, 'api', 1, 'items', item.slug)}">${_(u'JSON')}</a>
