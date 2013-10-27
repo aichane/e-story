@@ -72,7 +72,7 @@ from estory import model, texthelpers, urls
                     <th><a href="${model.Item.get_admin_class_url(ctx, **urls.relative_query(inputs, page = None,
                             sort = 'temporal_coverage_from'))}">${_(u"Period")}</a></th>
             % endif
-                    <th>${_(u"User")}</th>
+                    <th>${_(u"Source")}</th>
             % if data['sort'] == 'timestamp':
                     <th>${_(u"Last Modification")} <span class="glyphicon glyphicon-sort-by-attributes-alt"></span></th>
             % else:
@@ -128,12 +128,16 @@ from estory import model, texthelpers, urls
                         if fragment
                         )}</td>
                     <td>
+            % if item.user_id is None:
+                        <img class="img-responsive" style="max-width: 100px" src="http://www.data.gouv.fr/var/data_gouv_fr/storage/images/producteurs/ministere-de-la-culture-et-de-la-communication/3246-4-fre-FR/Ministere-de-la-Culture-et-de-la-Communication_resultat.jpg">
+            % else:
 <%
-            user = item.get_user(ctx)
+                user = item.get_user(ctx)
 %>\
                         ${user.full_name if user is not None else item.user_id or u''}
+            % endif
                     </td>
-                    <td>${item.timestamp or ''}</td>
+                    <td>${item.timestamp.split('T')[0]}</td>
                 </tr>
         % endfor
             </tbody>

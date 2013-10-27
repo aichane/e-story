@@ -89,7 +89,7 @@ from estory import model, texthelpers, urls
                         ${texthelpers.truncate(description_text, length = 180, whole_word = True)}
             % endif
                     </td>
-                    <td>${lesson.timestamp or ''}</td>
+                    <td>${lesson.timestamp.split('T')[0]}</td>
                 </tr>
         % endfor
             </tbody>
