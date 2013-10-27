@@ -57,7 +57,7 @@ def api1_typeahead(req):
         tags = (
             tag
             for tag in tags
-            if tag_re.search(tag)
+            if tag is not None and tag_re.search(tag)
             )
     return wsgihelpers.respond_json(ctx,
         list(itertools.islice(tags, 10)),
