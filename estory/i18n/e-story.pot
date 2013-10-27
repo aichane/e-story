@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: e-story 0.1dev\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-10-27 10:50+0100\n"
+"POT-Creation-Date: 2013-10-27 14:16+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -130,9 +130,9 @@ msgstr ""
 #: estory/controllers/accounts.py:114 estory/controllers/accounts.py:120
 #: estory/controllers/accounts.py:226 estory/controllers/items.py:89
 #: estory/controllers/items.py:95 estory/controllers/items.py:114
-#: estory/controllers/items.py:120 estory/controllers/items.py:237
-#: estory/controllers/items.py:284 estory/controllers/items.py:293
-#: estory/controllers/items.py:299 estory/controllers/lessons.py:73
+#: estory/controllers/items.py:120 estory/controllers/items.py:239
+#: estory/controllers/items.py:286 estory/controllers/items.py:295
+#: estory/controllers/items.py:301 estory/controllers/lessons.py:73
 #: estory/controllers/lessons.py:79 estory/controllers/lessons.py:98
 #: estory/controllers/lessons.py:104 estory/controllers/lessons.py:219
 #: estory/controllers/sessions.py:50
@@ -178,23 +178,23 @@ msgstr ""
 msgid "You can not view an account."
 msgstr ""
 
-#: estory/controllers/accounts.py:254 estory/controllers/items.py:348
-#: estory/controllers/items.py:466 estory/controllers/lessons.py:296
+#: estory/controllers/accounts.py:254 estory/controllers/items.py:350
+#: estory/controllers/items.py:468 estory/controllers/lessons.py:296
 msgid "Invalid JSON in request DELETE body"
 msgstr ""
 
-#: estory/controllers/accounts.py:286 estory/controllers/items.py:380
-#: estory/controllers/items.py:498 estory/controllers/lessons.py:328
+#: estory/controllers/accounts.py:286 estory/controllers/items.py:382
+#: estory/controllers/items.py:500 estory/controllers/lessons.py:328
 msgid "Bad parameters in request"
 msgstr ""
 
-#: estory/controllers/accounts.py:309 estory/controllers/items.py:403
-#: estory/controllers/items.py:521 estory/controllers/lessons.py:351
+#: estory/controllers/accounts.py:309 estory/controllers/items.py:405
+#: estory/controllers/items.py:523 estory/controllers/lessons.py:351
 msgid "Unknown API Key: {}"
 msgstr ""
 
-#: estory/controllers/accounts.py:324 estory/controllers/items.py:418
-#: estory/controllers/items.py:536 estory/controllers/lessons.py:366
+#: estory/controllers/accounts.py:324 estory/controllers/items.py:420
+#: estory/controllers/items.py:538 estory/controllers/lessons.py:366
 msgid "Non-admin API Key: {}"
 msgstr ""
 
@@ -223,7 +223,7 @@ msgstr ""
 msgid "You can not edit an item."
 msgstr ""
 
-#: estory/controllers/items.py:156 estory/controllers/items.py:262
+#: estory/controllers/items.py:156 estory/controllers/items.py:264
 msgid "An item with the same name already exists."
 msgstr ""
 
@@ -231,55 +231,55 @@ msgstr ""
 msgid "Item search error: {}"
 msgstr ""
 
-#: estory/controllers/items.py:235 estory/controllers/lessons.py:217
+#: estory/controllers/items.py:237 estory/controllers/lessons.py:217
 msgid "Creation unauthorized"
 msgstr ""
 
-#: estory/controllers/items.py:236
+#: estory/controllers/items.py:238
 msgid "You can not create an item."
 msgstr ""
 
-#: estory/controllers/items.py:282
+#: estory/controllers/items.py:284
 msgid "Lesson toggle unauthorized"
 msgstr ""
 
-#: estory/controllers/items.py:283
+#: estory/controllers/items.py:285
 msgid "You can not toggle a item in a lesson."
 msgstr ""
 
-#: estory/controllers/items.py:291
+#: estory/controllers/items.py:293
 msgid "No current lesson"
 msgstr ""
 
-#: estory/controllers/items.py:292
+#: estory/controllers/items.py:294
 msgid "There is no current lesson."
 msgstr ""
 
-#: estory/controllers/items.py:297
+#: estory/controllers/items.py:299
 msgid "Lesson toggle forbidden"
 msgstr ""
 
-#: estory/controllers/items.py:298
+#: estory/controllers/items.py:300
 msgid "You can not toggle an item in a lesson."
 msgstr ""
 
-#: estory/controllers/items.py:552
+#: estory/controllers/items.py:554
 msgid "No item containing a related link with ID {0}"
 msgstr ""
 
-#: estory/controllers/items.py:561
+#: estory/controllers/items.py:563
 msgid "No related link with ID {0}"
 msgstr ""
 
-#: estory/controllers/items.py:569
+#: estory/controllers/items.py:571
 msgid "Related Error: {}"
 msgstr ""
 
-#: estory/controllers/items.py:727
+#: estory/controllers/items.py:729
 msgid "Invalid JSON in request POST body"
 msgstr ""
 
-#: estory/controllers/items.py:1020 estory/controllers/items.py:1060
+#: estory/controllers/items.py:1022 estory/controllers/items.py:1062
 msgid "Item Error: {}"
 msgstr ""
 
@@ -332,7 +332,7 @@ msgstr ""
 msgid "Open data based history lessons"
 msgstr ""
 
-#: estory/templates/index.mako:102 estory/templates/site.mako:269
+#: estory/templates/index.mako:102 estory/templates/site.mako:270
 msgid "Sign in with Persona"
 msgstr ""
 
@@ -406,19 +406,19 @@ msgstr ""
 msgid "GNU Affero General Public License"
 msgstr ""
 
-#: estory/templates/site.mako:174
+#: estory/templates/site.mako:175
 msgid "Login failure: "
 msgstr ""
 
-#: estory/templates/site.mako:186
+#: estory/templates/site.mako:187
 msgid "Logout failure: "
 msgstr ""
 
-#: estory/templates/site.mako:222
+#: estory/templates/site.mako:223
 msgid "Toggle navigation"
 msgstr ""
 
-#: estory/templates/site.mako:232 estory/templates/site.mako:253
+#: estory/templates/site.mako:233 estory/templates/site.mako:254
 #: estory/templates/lessons/admin-delete.mako:39
 #: estory/templates/lessons/admin-edit.mako:38
 #: estory/templates/lessons/admin-index.mako:38
@@ -429,11 +429,11 @@ msgstr ""
 msgid "Lessons"
 msgstr ""
 
-#: estory/templates/site.mako:247
+#: estory/templates/site.mako:248
 msgid "Administration"
 msgstr ""
 
-#: estory/templates/site.mako:250 estory/templates/accounts/admin-delete.mako:39
+#: estory/templates/site.mako:251 estory/templates/accounts/admin-delete.mako:39
 #: estory/templates/accounts/admin-edit.mako:38
 #: estory/templates/accounts/admin-index.mako:38
 #: estory/templates/accounts/admin-index.mako:113
@@ -441,32 +441,32 @@ msgstr ""
 msgid "Accounts"
 msgstr ""
 
-#: estory/templates/site.mako:252 estory/templates/items/admin-delete.mako:39
+#: estory/templates/site.mako:253 estory/templates/items/admin-delete.mako:39
 #: estory/templates/items/admin-edit.mako:38
 #: estory/templates/items/admin-index.mako:38
-#: estory/templates/items/admin-index.mako:190
+#: estory/templates/items/admin-index.mako:207
 #: estory/templates/items/admin-new.mako:38
 #: estory/templates/items/admin-view.mako:38
 #: estory/templates/lessons/admin-view.mako:187
 msgid "Items"
 msgstr ""
 
-#: estory/templates/site.mako:255 estory/templates/sessions/admin-delete.mako:39
+#: estory/templates/site.mako:256 estory/templates/sessions/admin-delete.mako:39
 #: estory/templates/sessions/admin-index.mako:38
 #: estory/templates/sessions/admin-index.mako:89
 #: estory/templates/sessions/admin-view.mako:38
 msgid "Sessions"
 msgstr ""
 
-#: estory/templates/site.mako:269
+#: estory/templates/site.mako:270
 msgid "Sign in"
 msgstr ""
 
-#: estory/templates/site.mako:274
+#: estory/templates/site.mako:275
 msgid "Sign out from Persona"
 msgstr ""
 
-#: estory/templates/site.mako:274
+#: estory/templates/site.mako:275
 msgid "Sign out"
 msgstr ""
 
@@ -589,8 +589,8 @@ msgstr ""
 #: estory/templates/accounts/admin-index.mako:71
 #: estory/templates/accounts/admin-index.mako:74
 #: estory/templates/accounts/admin-view.mako:135
-#: estory/templates/items/admin-index.mako:70
-#: estory/templates/items/admin-index.mako:73
+#: estory/templates/items/admin-index.mako:77
+#: estory/templates/items/admin-index.mako:80
 #: estory/templates/items/admin-view.mako:197
 #: estory/templates/lessons/admin-index.mako:70
 #: estory/templates/lessons/admin-index.mako:73
@@ -600,14 +600,14 @@ msgid "Last Modification"
 msgstr ""
 
 #: estory/templates/accounts/admin-index.mako:101
-#: estory/templates/items/admin-index.mako:142
+#: estory/templates/items/admin-index.mako:159
 #: estory/templates/lessons/admin-index.mako:118
 #: estory/templates/lessons/index.mako:115
 msgid "Term"
 msgstr ""
 
 #: estory/templates/accounts/admin-index.mako:107
-#: estory/templates/items/admin-index.mako:175
+#: estory/templates/items/admin-index.mako:192
 #: estory/templates/lessons/admin-index.mako:151
 #: estory/templates/lessons/index.mako:148
 msgid "Search"
@@ -687,7 +687,7 @@ msgid "Temporal Coverage To"
 msgstr ""
 
 #: estory/templates/items/admin-edit.mako:134
-#: estory/templates/items/admin-index.mako:154
+#: estory/templates/items/admin-index.mako:171
 #: estory/templates/lessons/admin-edit.mako:94
 #: estory/templates/lessons/admin-index.mako:130
 #: estory/templates/lessons/index.mako:127
@@ -715,7 +715,18 @@ msgid "{} items"
 msgstr ""
 
 #: estory/templates/items/admin-index.mako:62
-#: estory/templates/items/admin-index.mako:167
+#: estory/templates/items/admin-view.mako:99
+#: estory/templates/lessons/admin-view.mako:181
+msgid "Image"
+msgstr ""
+
+#: estory/templates/items/admin-index.mako:70
+#: estory/templates/items/admin-index.mako:73
+msgid "Period"
+msgstr ""
+
+#: estory/templates/items/admin-index.mako:75
+#: estory/templates/items/admin-index.mako:184
 #: estory/templates/items/admin-view.mako:182
 #: estory/templates/lessons/admin-index.mako:62
 #: estory/templates/lessons/admin-index.mako:143
@@ -726,24 +737,24 @@ msgstr ""
 msgid "User"
 msgstr ""
 
-#: estory/templates/items/admin-index.mako:100
+#: estory/templates/items/admin-index.mako:106
 msgid "Temporal coverage"
 msgstr ""
 
-#: estory/templates/items/admin-index.mako:103
+#: estory/templates/items/admin-index.mako:109
 msgid "{0} to {1}"
 msgstr ""
 
-#: estory/templates/items/admin-index.mako:103
-#: estory/templates/items/admin-index.mako:104
+#: estory/templates/items/admin-index.mako:109
+#: estory/templates/items/admin-index.mako:110
 msgid "…"
 msgstr ""
 
-#: estory/templates/items/admin-index.mako:110
+#: estory/templates/items/admin-index.mako:116
 msgid "Territorial coverage"
 msgstr ""
 
-#: estory/templates/items/admin-index.mako:127
+#: estory/templates/items/admin-index.mako:144
 #: estory/templates/items/admin-new.mako:39
 #: estory/templates/lessons/admin-index.mako:103
 #: estory/templates/lessons/admin-new.mako:39
@@ -751,13 +762,13 @@ msgstr ""
 msgid "New"
 msgstr ""
 
-#: estory/templates/items/admin-index.mako:180
+#: estory/templates/items/admin-index.mako:197
 #: estory/templates/lessons/admin-index.mako:156
 #: estory/templates/lessons/index.mako:153
 msgid "Simplified Search"
 msgstr ""
 
-#: estory/templates/items/admin-index.mako:183
+#: estory/templates/items/admin-index.mako:200
 #: estory/templates/lessons/admin-index.mako:159
 #: estory/templates/lessons/index.mako:156
 msgid "Advanced Search"
@@ -782,11 +793,6 @@ msgstr ""
 
 #: estory/templates/items/admin-view.mako:53
 msgid "Add to Lesson"
-msgstr ""
-
-#: estory/templates/items/admin-view.mako:99
-#: estory/templates/lessons/admin-view.mako:181
-msgid "Image"
 msgstr ""
 
 #: estory/templates/items/admin-view.mako:157

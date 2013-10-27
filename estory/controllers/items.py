@@ -192,7 +192,7 @@ def admin_index(req):
                     ),
                 sort = conv.pipe(
                     conv.cleanup_line,
-                    conv.test_in(['slug', 'timestamp']),
+                    conv.test_in(['slug', 'temporal_coverage_from', 'timestamp']),
                     ),
                 tag = conv.input_to_slug,
                 term = conv.input_to_slug,
@@ -218,6 +218,8 @@ def admin_index(req):
     pager = paginations.Pager(item_count = cursor.count(), page_number = data['page_number'])
     if data['sort'] == 'slug':
         cursor.sort([('slug', pymongo.ASCENDING)])
+    elif data['sort'] == 'temporal_coverage_from':
+        cursor.sort([(data['sort'], pymongo.ASCENDING), ('slug', pymongo.ASCENDING)])
     elif data['sort'] == 'timestamp':
         cursor.sort([(data['sort'], pymongo.DESCENDING), ('slug', pymongo.ASCENDING)])
     items = cursor.skip(pager.first_item_index or 0).limit(pager.page_size)

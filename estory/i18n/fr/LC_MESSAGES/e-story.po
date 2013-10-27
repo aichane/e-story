@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: e-story 0.1dev\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-10-27 10:50+0100\n"
-"PO-Revision-Date: 2013-10-27 11:06+0100\n"
+"POT-Creation-Date: 2013-10-27 14:16+0100\n"
+"PO-Revision-Date: 2013-10-27 14:17+0100\n"
 "Last-Translator: Emmanuel Raviart <eraviart@easter-eggs.com>\n"
 "Language-Team: fr <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
@@ -24,7 +24,6 @@ msgid "Invalid year or month or day"
 msgstr "Année ou mois ou jour incorrect"
 
 #: estory/model.py:99
-#| msgid "No account with ID {0}"
 msgid "No account with slug {0}"
 msgstr "Aucun compte de nom simplifié {0}"
 
@@ -33,22 +32,18 @@ msgid "No account with ID {0}"
 msgstr "Aucun compte d'identifiant {0}"
 
 #: estory/model.py:184
-#| msgid "No dataset with ID {0}"
 msgid "No item with slug {0}"
 msgstr "Aucun élément de nom simplifié {0}"
 
 #: estory/model.py:188
-#| msgid "No dataset with ID {0}"
 msgid "No item with ID {0}"
 msgstr "Aucun élément d'identifiant {0}"
 
 #: estory/model.py:282
-#| msgid "No session with token {0}"
 msgid "No lesson with slug {0}"
 msgstr "Aucun cours de nom simplifié {0}"
 
 #: estory/model.py:286
-#| msgid "No session with token {0}"
 msgid "No lesson with ID {0}"
 msgstr "Aucun cours d'identifiant {0}"
 
@@ -126,7 +121,6 @@ msgstr "Redirection en cours..."
 
 #: estory/controllers/accounts.py:87 estory/controllers/items.py:87
 #: estory/controllers/lessons.py:71
-#| msgid "Deletion forbidden"
 msgid "Deletion unauthorized"
 msgstr "Suppression non autorisée"
 
@@ -138,9 +132,9 @@ msgstr "Vous ne pouvez pas supprimer un compte."
 #: estory/controllers/accounts.py:114 estory/controllers/accounts.py:120
 #: estory/controllers/accounts.py:226 estory/controllers/items.py:89
 #: estory/controllers/items.py:95 estory/controllers/items.py:114
-#: estory/controllers/items.py:120 estory/controllers/items.py:237
-#: estory/controllers/items.py:284 estory/controllers/items.py:293
-#: estory/controllers/items.py:299 estory/controllers/lessons.py:73
+#: estory/controllers/items.py:120 estory/controllers/items.py:239
+#: estory/controllers/items.py:286 estory/controllers/items.py:295
+#: estory/controllers/items.py:301 estory/controllers/lessons.py:73
 #: estory/controllers/lessons.py:79 estory/controllers/lessons.py:98
 #: estory/controllers/lessons.py:104 estory/controllers/lessons.py:219
 #: estory/controllers/sessions.py:50
@@ -171,7 +165,6 @@ msgid "An account with the same email already exists."
 msgstr "Un compte avec le même courriel existe déjà."
 
 #: estory/controllers/accounts.py:160
-#| msgid "An account with the same email already exists."
 msgid "An account with the same name already exists."
 msgstr "Un compte avec le même nom existe déjà."
 
@@ -180,38 +173,35 @@ msgid "Account search error: {}"
 msgstr "Erreur dans la recherche de comptes : {}"
 
 #: estory/controllers/accounts.py:224
-#| msgid "Edition forbidden"
 msgid "View forbidden"
 msgstr "Visualisation interdite"
 
 #: estory/controllers/accounts.py:225
-#| msgid "You can not edit an account."
 msgid "You can not view an account."
 msgstr "Vous ne pouvez pas visualiser un compte."
 
-#: estory/controllers/accounts.py:254 estory/controllers/items.py:348
-#: estory/controllers/items.py:466 estory/controllers/lessons.py:296
+#: estory/controllers/accounts.py:254 estory/controllers/items.py:350
+#: estory/controllers/items.py:468 estory/controllers/lessons.py:296
 msgid "Invalid JSON in request DELETE body"
 msgstr "JSON incorrect dans le corps de la requête DELETE"
 
-#: estory/controllers/accounts.py:286 estory/controllers/items.py:380
-#: estory/controllers/items.py:498 estory/controllers/lessons.py:328
+#: estory/controllers/accounts.py:286 estory/controllers/items.py:382
+#: estory/controllers/items.py:500 estory/controllers/lessons.py:328
 msgid "Bad parameters in request"
 msgstr "Mauvais paramètres dans la requête"
 
-#: estory/controllers/accounts.py:309 estory/controllers/items.py:403
-#: estory/controllers/items.py:521 estory/controllers/lessons.py:351
+#: estory/controllers/accounts.py:309 estory/controllers/items.py:405
+#: estory/controllers/items.py:523 estory/controllers/lessons.py:351
 msgid "Unknown API Key: {}"
 msgstr "Clé d'API inconnue : {}"
 
-#: estory/controllers/accounts.py:324 estory/controllers/items.py:418
-#: estory/controllers/items.py:536 estory/controllers/lessons.py:366
+#: estory/controllers/accounts.py:324 estory/controllers/items.py:420
+#: estory/controllers/items.py:538 estory/controllers/lessons.py:366
 msgid "Non-admin API Key: {}"
 msgstr "Clé d'API non admin : {}"
 
 #: estory/controllers/accounts.py:489 estory/controllers/lessons.py:190
 #: estory/controllers/lessons.py:531 estory/controllers/lessons.py:595
-#| msgid "Account search error: {}"
 msgid "Lesson search error: {}"
 msgstr "Erreur dans la recherche de cours : {}"
 
@@ -228,111 +218,95 @@ msgid "Account Error: {}"
 msgstr "Erreur de compte : {}"
 
 #: estory/controllers/items.py:88 estory/controllers/items.py:94
-#| msgid "You can not delete a dataset."
 msgid "You can not delete an item."
 msgstr "Vous ne pouvez pas supprimer un élément."
 
 #: estory/controllers/items.py:113 estory/controllers/items.py:119
-#| msgid "You can not edit a dataset."
 msgid "You can not edit an item."
 msgstr "Vous ne pouvez pas éditer un élément."
 
-#: estory/controllers/items.py:156 estory/controllers/items.py:262
-#| msgid "A dataset with the same email already exists."
+#: estory/controllers/items.py:156 estory/controllers/items.py:264
 msgid "An item with the same name already exists."
 msgstr "Un élément avec le même nom existe déjà."
 
 #: estory/controllers/items.py:208
-#| msgid "Dataset search error: {}"
 msgid "Item search error: {}"
 msgstr "Erreur dans la recherche d'éléments : {}"
 
-#: estory/controllers/items.py:235 estory/controllers/lessons.py:217
+#: estory/controllers/items.py:237 estory/controllers/lessons.py:217
 msgid "Creation unauthorized"
 msgstr "Création non autorisée"
 
-#: estory/controllers/items.py:236
-#| msgid "You can not delete a dataset."
+#: estory/controllers/items.py:238
 msgid "You can not create an item."
 msgstr "Vous ne pouvez pas créer un élément."
 
-#: estory/controllers/items.py:282
+#: estory/controllers/items.py:284
 msgid "Lesson toggle unauthorized"
 msgstr "Bascule de cours non autorisée"
 
-#: estory/controllers/items.py:283
-#| msgid "You can not delete a session."
+#: estory/controllers/items.py:285
 msgid "You can not toggle a item in a lesson."
 msgstr "Vous ne pouvez pas basculer un élément dans un cours."
 
-#: estory/controllers/items.py:291
+#: estory/controllers/items.py:293
 msgid "No current lesson"
 msgstr "Pas de cours sélectionné"
 
-#: estory/controllers/items.py:292
+#: estory/controllers/items.py:294
 msgid "There is no current lesson."
 msgstr "Il n'y a pas de cours sélectionné."
 
-#: estory/controllers/items.py:297
-#| msgid "Deletion forbidden"
+#: estory/controllers/items.py:299
 msgid "Lesson toggle forbidden"
 msgstr "Bascule de cours interdite"
 
-#: estory/controllers/items.py:298
-#| msgid "You can not delete a session."
+#: estory/controllers/items.py:300
 msgid "You can not toggle an item in a lesson."
 msgstr "Vous ne pouvez pas basculer un élément dans un cours."
 
-#: estory/controllers/items.py:552
-#| msgid "No dataset containing a related link with ID {0}"
+#: estory/controllers/items.py:554
 msgid "No item containing a related link with ID {0}"
 msgstr "Aucun élément ne contient de lien connexe d'identifiant {0}"
 
-#: estory/controllers/items.py:561
+#: estory/controllers/items.py:563
 msgid "No related link with ID {0}"
 msgstr "Aucun lien connexe d'identifiant {0}"
 
-#: estory/controllers/items.py:569
+#: estory/controllers/items.py:571
 msgid "Related Error: {}"
 msgstr "Erreur de lien connexe : {}"
 
-#: estory/controllers/items.py:727
+#: estory/controllers/items.py:729
 msgid "Invalid JSON in request POST body"
 msgstr "JSON incorrect dans le corps de la requête POST"
 
-#: estory/controllers/items.py:1020 estory/controllers/items.py:1060
-#| msgid "Related Error: {}"
+#: estory/controllers/items.py:1022 estory/controllers/items.py:1062
 msgid "Item Error: {}"
 msgstr "Erreurd'élément : {}"
 
 #: estory/controllers/lessons.py:72 estory/controllers/lessons.py:78
-#| msgid "You can not delete a session."
 msgid "You can not delete a lesson."
 msgstr "Vous ne pouvez pas supprimer un cours."
 
 #: estory/controllers/lessons.py:97 estory/controllers/lessons.py:103
-#| msgid "You can not delete a session."
 msgid "You can not edit a lesson."
 msgstr "Vous ne pouvez pas éditer un cours."
 
 #: estory/controllers/lessons.py:134
-#| msgid "A group with the same email already exists."
 msgid "A lesson with the same email already exists."
 msgstr "Un cours avec le même courriel existe déjà."
 
 #: estory/controllers/lessons.py:218
-#| msgid "You can not delete a session."
 msgid "You can not create a lesson."
 msgstr "Vous ne pouvez pas créer un cours."
 
 #: estory/controllers/lessons.py:244
-#| msgid "A group with the same email already exists."
 msgid "A lesson with the same name already exists."
 msgstr "Un cours avec le même nom existe déjà."
 
 #: estory/controllers/lessons.py:625 estory/controllers/lessons.py:646
 #: estory/controllers/lessons.py:685
-#| msgid "Session Error: {}"
 msgid "Lesson Error: {}"
 msgstr "Erreur de cours : {}"
 
@@ -353,7 +327,6 @@ msgid "Tag search error: {}"
 msgstr "Erreur dans la recherche de mots-clés : {}"
 
 #: estory/templates/index.mako:57
-#| msgid "Welcome to CKAN-of-Worms"
 msgid "Welcome to e-story"
 msgstr "Bienvenue sur e-story"
 
@@ -361,7 +334,7 @@ msgstr "Bienvenue sur e-story"
 msgid "Open data based history lessons"
 msgstr "Cours d'histoires basés sur des données ouvertes"
 
-#: estory/templates/index.mako:102 estory/templates/site.mako:269
+#: estory/templates/index.mako:102 estory/templates/site.mako:270
 msgid "Sign in with Persona"
 msgstr "Connexion avec Persona"
 
@@ -386,12 +359,10 @@ msgid "Please, correct the informations below."
 msgstr "Veuillez corriger les informations ci-dessous."
 
 #: estory/templates/site.mako:99
-#| msgid "{} - Datasets Atom feed"
 msgid "{} - Items Atom feed"
 msgstr "{} - Fil Atom des éléments"
 
 #: estory/templates/site.mako:101
-#| msgid "{} - Datasets Atom feed"
 msgid "{} - Lessons Atom feed"
 msgstr "{} - Fil Atom des cours"
 
@@ -437,19 +408,19 @@ msgstr "Logiciel"
 msgid "GNU Affero General Public License"
 msgstr "Licence publique générale GNU Affero"
 
-#: estory/templates/site.mako:174
+#: estory/templates/site.mako:175
 msgid "Login failure: "
 msgstr "Erreur d'identification :"
 
-#: estory/templates/site.mako:186
+#: estory/templates/site.mako:187
 msgid "Logout failure: "
 msgstr "Erreur de déconnexion :"
 
-#: estory/templates/site.mako:222
+#: estory/templates/site.mako:223
 msgid "Toggle navigation"
 msgstr "Basculer la navigation"
 
-#: estory/templates/site.mako:232 estory/templates/site.mako:253
+#: estory/templates/site.mako:233 estory/templates/site.mako:254
 #: estory/templates/lessons/admin-delete.mako:39
 #: estory/templates/lessons/admin-edit.mako:38
 #: estory/templates/lessons/admin-index.mako:38
@@ -457,15 +428,14 @@ msgstr "Basculer la navigation"
 #: estory/templates/lessons/admin-new.mako:38
 #: estory/templates/lessons/admin-view.mako:65
 #: estory/templates/lessons/index.mako:163
-#| msgid "Sessions"
 msgid "Lessons"
 msgstr "Cours"
 
-#: estory/templates/site.mako:247
+#: estory/templates/site.mako:248
 msgid "Administration"
 msgstr "Administration"
 
-#: estory/templates/site.mako:250
+#: estory/templates/site.mako:251
 #: estory/templates/accounts/admin-delete.mako:39
 #: estory/templates/accounts/admin-edit.mako:38
 #: estory/templates/accounts/admin-index.mako:38
@@ -474,18 +444,17 @@ msgstr "Administration"
 msgid "Accounts"
 msgstr "Comptes"
 
-#: estory/templates/site.mako:252 estory/templates/items/admin-delete.mako:39
+#: estory/templates/site.mako:253 estory/templates/items/admin-delete.mako:39
 #: estory/templates/items/admin-edit.mako:38
 #: estory/templates/items/admin-index.mako:38
-#: estory/templates/items/admin-index.mako:190
+#: estory/templates/items/admin-index.mako:207
 #: estory/templates/items/admin-new.mako:38
 #: estory/templates/items/admin-view.mako:38
 #: estory/templates/lessons/admin-view.mako:187
-#| msgid "Title"
 msgid "Items"
 msgstr "Éléments"
 
-#: estory/templates/site.mako:255
+#: estory/templates/site.mako:256
 #: estory/templates/sessions/admin-delete.mako:39
 #: estory/templates/sessions/admin-index.mako:38
 #: estory/templates/sessions/admin-index.mako:89
@@ -493,15 +462,15 @@ msgstr "Éléments"
 msgid "Sessions"
 msgstr "Sessions"
 
-#: estory/templates/site.mako:269
+#: estory/templates/site.mako:270
 msgid "Sign in"
 msgstr "Connexion"
 
-#: estory/templates/site.mako:274
+#: estory/templates/site.mako:275
 msgid "Sign out from Persona"
 msgstr "Déconnexion de Persona"
 
-#: estory/templates/site.mako:274
+#: estory/templates/site.mako:275
 msgid "Sign out"
 msgstr "Déconnexion"
 
@@ -624,8 +593,8 @@ msgstr "Profil"
 #: estory/templates/accounts/admin-index.mako:71
 #: estory/templates/accounts/admin-index.mako:74
 #: estory/templates/accounts/admin-view.mako:135
-#: estory/templates/items/admin-index.mako:70
-#: estory/templates/items/admin-index.mako:73
+#: estory/templates/items/admin-index.mako:77
+#: estory/templates/items/admin-index.mako:80
 #: estory/templates/items/admin-view.mako:197
 #: estory/templates/lessons/admin-index.mako:70
 #: estory/templates/lessons/admin-index.mako:73
@@ -636,14 +605,14 @@ msgid "Last Modification"
 msgstr "Dernière modification"
 
 #: estory/templates/accounts/admin-index.mako:101
-#: estory/templates/items/admin-index.mako:142
+#: estory/templates/items/admin-index.mako:159
 #: estory/templates/lessons/admin-index.mako:118
 #: estory/templates/lessons/index.mako:115
 msgid "Term"
 msgstr "Terme"
 
 #: estory/templates/accounts/admin-index.mako:107
-#: estory/templates/items/admin-index.mako:175
+#: estory/templates/items/admin-index.mako:192
 #: estory/templates/lessons/admin-index.mako:151
 #: estory/templates/lessons/index.mako:148
 msgid "Search"
@@ -682,7 +651,6 @@ msgid "API Key"
 msgstr "Clé d'API"
 
 #: estory/templates/items/admin-delete.mako:47
-#| msgid "Are you sure that you want to delete this dataset?"
 msgid "Are you sure that you want to delete this item?"
 msgstr "Êtes-vous sûr de vouloir supprimer cet élément ?"
 
@@ -725,7 +693,7 @@ msgid "Temporal Coverage To"
 msgstr "Fin de la couverture temporelle"
 
 #: estory/templates/items/admin-edit.mako:134
-#: estory/templates/items/admin-index.mako:154
+#: estory/templates/items/admin-index.mako:171
 #: estory/templates/lessons/admin-edit.mako:94
 #: estory/templates/lessons/admin-index.mako:130
 #: estory/templates/lessons/index.mako:127
@@ -733,22 +701,18 @@ msgid "Tag"
 msgstr "Mot-clé"
 
 #: estory/templates/items/admin-index.mako:45
-#| msgid "No dataset found"
 msgid "No item found"
 msgstr "Aucun élément trouvé"
 
 #: estory/templates/items/admin-index.mako:49
-#| msgid "Dataset {0} of {1}"
 msgid "Item {0} of {1}"
 msgstr "Élément {0} sur {1}"
 
 #: estory/templates/items/admin-index.mako:51
-#| msgid "Datasets {0} - {1} of {2}"
 msgid "Items {0} - {1} of {2}"
 msgstr "Éléments {0} à {1} sur {2}"
 
 #: estory/templates/items/admin-index.mako:54
-#| msgid "Single dataset"
 msgid "Single item"
 msgstr "Élément unique"
 
@@ -757,7 +721,18 @@ msgid "{} items"
 msgstr "{} éléments"
 
 #: estory/templates/items/admin-index.mako:62
-#: estory/templates/items/admin-index.mako:167
+#: estory/templates/items/admin-view.mako:99
+#: estory/templates/lessons/admin-view.mako:181
+msgid "Image"
+msgstr "Image"
+
+#: estory/templates/items/admin-index.mako:70
+#: estory/templates/items/admin-index.mako:73
+msgid "Period"
+msgstr "Période"
+
+#: estory/templates/items/admin-index.mako:75
+#: estory/templates/items/admin-index.mako:184
 #: estory/templates/items/admin-view.mako:182
 #: estory/templates/lessons/admin-index.mako:62
 #: estory/templates/lessons/admin-index.mako:143
@@ -769,24 +744,24 @@ msgstr "{} éléments"
 msgid "User"
 msgstr "Utilisateur"
 
-#: estory/templates/items/admin-index.mako:100
+#: estory/templates/items/admin-index.mako:106
 msgid "Temporal coverage"
 msgstr "Couverture temporelle"
 
-#: estory/templates/items/admin-index.mako:103
+#: estory/templates/items/admin-index.mako:109
 msgid "{0} to {1}"
 msgstr "{0} à {1}"
 
-#: estory/templates/items/admin-index.mako:103
-#: estory/templates/items/admin-index.mako:104
+#: estory/templates/items/admin-index.mako:109
+#: estory/templates/items/admin-index.mako:110
 msgid "…"
 msgstr "..."
 
-#: estory/templates/items/admin-index.mako:110
+#: estory/templates/items/admin-index.mako:116
 msgid "Territorial coverage"
 msgstr "Couverture territoriale"
 
-#: estory/templates/items/admin-index.mako:127
+#: estory/templates/items/admin-index.mako:144
 #: estory/templates/items/admin-new.mako:39
 #: estory/templates/lessons/admin-index.mako:103
 #: estory/templates/lessons/admin-new.mako:39
@@ -794,26 +769,24 @@ msgstr "Couverture territoriale"
 msgid "New"
 msgstr "Nouveau"
 
-#: estory/templates/items/admin-index.mako:180
+#: estory/templates/items/admin-index.mako:197
 #: estory/templates/lessons/admin-index.mako:156
 #: estory/templates/lessons/index.mako:153
 msgid "Simplified Search"
 msgstr "Recherche simplifiée"
 
-#: estory/templates/items/admin-index.mako:183
+#: estory/templates/items/admin-index.mako:200
 #: estory/templates/lessons/admin-index.mako:159
 #: estory/templates/lessons/index.mako:156
 msgid "Advanced Search"
 msgstr "Recherche avancée"
 
 #: estory/templates/items/admin-new.mako:47
-#| msgid "Deletion of {}"
 msgid "Creation of Item"
 msgstr "Création d'un élément"
 
 #: estory/templates/items/admin-new.mako:50
 #: estory/templates/lessons/admin-new.mako:50
-#| msgid "Created"
 msgid "Create"
 msgstr "Créer"
 
@@ -829,11 +802,6 @@ msgstr "Enlever du cours"
 msgid "Add to Lesson"
 msgstr "Ajouter au cours"
 
-#: estory/templates/items/admin-view.mako:99
-#: estory/templates/lessons/admin-view.mako:181
-msgid "Image"
-msgstr "Image"
-
 #: estory/templates/items/admin-view.mako:157
 msgid "Territorial Coverage"
 msgstr "Couverture territoriale"
@@ -844,37 +812,31 @@ msgid "Tags"
 msgstr "Mots-clés"
 
 #: estory/templates/lessons/admin-delete.mako:47
-#| msgid "Are you sure that you want to delete this session?"
 msgid "Are you sure that you want to delete this lesson?"
 msgstr "Êtes-vous sûr de vouloir supprimer ce cours ?"
 
 #: estory/templates/lessons/admin-index.mako:45
 #: estory/templates/lessons/index.mako:42
-#| msgid "No session found"
 msgid "No lesson found"
 msgstr "Aucun cours trouvé"
 
 #: estory/templates/lessons/admin-index.mako:49
 #: estory/templates/lessons/index.mako:46
-#| msgid "Session {0} of {1}"
 msgid "Lesson {0} of {1}"
 msgstr "Cours {0} sur {1}"
 
 #: estory/templates/lessons/admin-index.mako:51
 #: estory/templates/lessons/index.mako:48
-#| msgid "Sessions {0} - {1} of {2}"
 msgid "Lessons {0} - {1} of {2}"
 msgstr "Cours {0} à {1} sur {2}"
 
 #: estory/templates/lessons/admin-index.mako:54
 #: estory/templates/lessons/index.mako:51
-#| msgid "Single session"
 msgid "Single lesson"
 msgstr "Cours unique"
 
 #: estory/templates/lessons/admin-index.mako:56
 #: estory/templates/lessons/index.mako:53
-#| msgid "{} sessions"
 msgid "{} lessons"
 msgstr "{} cours"
 
@@ -922,314 +884,5 @@ msgstr "Identifiant utilisateur"
 
 #: estory/templates/sessions/admin-view.mako:81
 #: estory/templates/sessions/admin-view.mako:86
-#| msgid "Sessions"
 msgid "Lesson"
 msgstr "Cours"
-
-#~ msgid "Errors can't contain a list"
-#~ msgstr "Les erreurs ne peuvent pas contenir de listes"
-
-#~ msgid "No account with name {0}"
-#~ msgstr "Aucun compte de nom {0}"
-
-#~ msgid "No dataset with name {0}"
-#~ msgstr "Aucun jeu de données de nom {0}"
-
-#~ msgid "No group with name {0}"
-#~ msgstr "Aucun groupe de nom {0}"
-
-#~ msgid "No group with ID {0}"
-#~ msgstr "Aucun group d'identifiant {0}"
-
-#~ msgid "No group with title {0}"
-#~ msgstr "Aucun groupe de titre {0}"
-
-#~ msgid "No organization with name {0}"
-#~ msgstr "Aucune organisation de nom {0}"
-
-#~ msgid "No organization with ID {0}"
-#~ msgstr "Aucune organisation d'identifiant {0}"
-
-#~ msgid "No organization with title {0}"
-#~ msgstr "Aucune organisation de titre {0}"
-
-#~ msgid "Wrong version: {}, expected: {}"
-#~ msgstr "Mauvaise version : {}, attendue : {}"
-
-#~ msgid "Territory must have the form \"kind/code\""
-#~ msgstr "Le territoire doit avoir la forme \"genre/code\""
-
-#~ msgid "Dataset Error: {}"
-#~ msgstr "Erreur de jeu de données : {}"
-
-#~ msgid "You can not delete a group."
-#~ msgstr "Vous ne pouvez pas supprimer un groupe."
-
-#~ msgid "You can not edit a group."
-#~ msgstr "Vous ne pouvez pas éditer un groupe."
-
-#~ msgid "Group search error: {}"
-#~ msgstr "Erreur dans la recherche de groupes : {}"
-
-#~ msgid "Group Error: {}"
-#~ msgstr "Erreur de groupe : {}"
-
-#~ msgid "You can not delete an organization."
-#~ msgstr "Vous ne pouvez pas supprimer une organisation."
-
-#~ msgid "You can not edit an organization."
-#~ msgstr "Vous ne pouvez pas éditer une organisation."
-
-#~ msgid "An organization with the same email already exists."
-#~ msgstr "Une organisation avec le même courriel existe déjà."
-
-#~ msgid "Organization search error: {}"
-#~ msgstr "Erreur dans la recherche d'organisations : {}"
-
-#~ msgid "Organization Error: {}"
-#~ msgstr "Erreur d'organisation : {}"
-
-#~ msgid "A logger for errors found in CKAN datasets"
-#~ msgstr "Un journal des erreurs trouvées dans les jeux de données CKAN"
-
-#~ msgid "{} - Organizations Atom feed"
-#~ msgstr "{} - Fil Atom des organisations"
-
-#~ msgid "Datasets"
-#~ msgstr "Jeux de données"
-
-#~ msgid "Groups"
-#~ msgstr "Groupes"
-
-#~ msgid "Organizations"
-#~ msgstr "Organisations"
-
-#~ msgid "ID"
-#~ msgstr "Identifiant"
-
-#~ msgid "Name"
-#~ msgstr "Nom"
-
-#~ msgid "Creation"
-#~ msgstr "Création"
-
-#~ msgid "JSON"
-#~ msgstr "JSON"
-
-#~ msgid "Email Hash"
-#~ msgstr "Hachage du courriel"
-
-#~ msgid "About"
-#~ msgstr "À propos"
-
-#~ msgid "Sysadmin"
-#~ msgstr "Administrateur système"
-
-#~ msgid "Critical"
-#~ msgstr "Critique"
-
-#~ msgid "Debug"
-#~ msgstr "Débogage"
-
-#~ msgid "Error"
-#~ msgstr "Erreur"
-
-#~ msgid "Info"
-#~ msgstr "Info"
-
-#~ msgid "Warning"
-#~ msgstr "Avertissement"
-
-#~ msgid "{} datasets"
-#~ msgstr "{} jeux de données"
-
-#~ msgid "Organization"
-#~ msgstr "Organisation"
-
-#~ msgid "Alerts"
-#~ msgstr "Alertes"
-
-#~ msgid "Search ranking"
-#~ msgstr "Classement de recherche"
-
-#~ msgid "{:3.2f}"
-#~ msgstr "{:3.2f}"
-
-#~ msgid "Update frequency"
-#~ msgstr "Fréquence de mise à jour"
-
-#~ msgid "Territorial coverage granularity"
-#~ msgstr "Granularité de couverture territoriale"
-
-#~ msgid "{}: {}"
-#~ msgstr "{} : {}"
-
-#~ msgid "Group"
-#~ msgstr "Groupe"
-
-#~ msgid "Supplier"
-#~ msgstr "Fournisseur"
-
-#~ msgid "All"
-#~ msgstr "Tous"
-
-#~ msgid "Info or above"
-#~ msgstr "Info ou supérieur"
-
-#~ msgid "Warning or above"
-#~ msgstr "Avertissement ou supérieur"
-
-#~ msgid "Error or above"
-#~ msgstr "Erreur ou supérieur"
-
-#~ msgid "Alert Level"
-#~ msgstr "Niveau d'alerte"
-
-#~ msgid "Related only"
-#~ msgstr "Liens connexes uniquement"
-
-#~ msgid "News Feed"
-#~ msgstr "Fil d'actualité"
-
-#~ msgid "Statistics"
-#~ msgstr "Statistiques"
-
-#~ msgid "Repair"
-#~ msgstr "Réparer"
-
-#~ msgid "View in Front"
-#~ msgstr "Voir dans le front"
-
-#~ msgid "Publish"
-#~ msgstr "Publier"
-
-#~ msgid "This dataset has some defects"
-#~ msgstr "Ce jeu de données a certains défauts"
-
-#~ msgid "{}:"
-#~ msgstr "{} :"
-
-#~ msgid "Low search rank:"
-#~ msgstr "Classement de recherche faible :"
-
-#~ msgid "Please look at the alerts below and repair this dataset now."
-#~ msgstr ""
-#~ "Veuillez consulter les alertes ci-dessous et réparer maintenant ce jeu de "
-#~ "données."
-
-#~ msgid "Notes"
-#~ msgstr "Notes"
-
-#~ msgid "Resources"
-#~ msgstr "Ressources"
-
-#~ msgid "Format"
-#~ msgstr "Format"
-
-#~ msgid "Last Modified"
-#~ msgstr "Dernière modification"
-
-#~ msgid "Extras"
-#~ msgstr "Extras"
-
-#~ msgid "Key"
-#~ msgstr "Clé"
-
-#~ msgid "Value"
-#~ msgstr "Valeur"
-
-#~ msgid "Update Frequency"
-#~ msgstr "Fréquence de mise à jour"
-
-#~ msgid "Territorial Coverage Granularity"
-#~ msgstr "Granularité de couverture territoriale"
-
-#~ msgid "Office, Department or Service"
-#~ msgstr "Bureau, département ou service"
-
-#~ msgid "Contact Email"
-#~ msgstr "Courriel de contact"
-
-#~ msgid "Maintainer"
-#~ msgstr "Mainteneur"
-
-#~ msgid "Maintainer Email"
-#~ msgstr "Courriel du mainteneur"
-
-#~ msgid "URL (in supplier site)"
-#~ msgstr "URL (dans le site fournisseur)"
-
-#~ msgid "License"
-#~ msgstr "Licence"
-
-#~ msgid "Weight"
-#~ msgstr "Poids"
-
-#~ msgid "Metadata Modified"
-#~ msgstr "Modification des méta-données"
-
-#~ msgid "Metadata Created"
-#~ msgstr "Création des méta-données"
-
-#~ msgid "Revision Timestamp"
-#~ msgstr "Horodatage de la révision"
-
-#~ msgid "Timestamp"
-#~ msgstr "Horodatage"
-
-#~ msgid "Revision ID"
-#~ msgstr "Identifiant de la révision"
-
-#~ msgid "Related"
-#~ msgstr "Lien connexe"
-
-#~ msgid "Type"
-#~ msgstr "Type"
-
-#~ msgid "Owner"
-#~ msgstr "Possesseur"
-
-#~ msgid "Are you sure that you want to delete this group?"
-#~ msgstr "Êtes-vous sûr de vouloir supprimer ce groupe ?"
-
-#~ msgid "No group found"
-#~ msgstr "Aucun groupe trouvé"
-
-#~ msgid "Group {0} of {1}"
-#~ msgstr "Groupe {0} sur {1}"
-
-#~ msgid "Groups {0} - {1} of {2}"
-#~ msgstr "Groupes {0} à {1} sur {2}"
-
-#~ msgid "Single group"
-#~ msgstr "Groupe unique"
-
-#~ msgid "{} groups"
-#~ msgstr "{} groupes"
-
-#~ msgid "Logo"
-#~ msgstr "Logo"
-
-#~ msgid "Are you sure that you want to delete this organization?"
-#~ msgstr "Êtes-vous sûr de vouloir supprimer cette organisation ?"
-
-#~ msgid "No organization found"
-#~ msgstr "Aucune organisation trouvée"
-
-#~ msgid "Organization {0} of {1}"
-#~ msgstr "Organisation {0} sur {1}"
-
-#~ msgid "Organizations {0} - {1} of {2}"
-#~ msgstr "Organisations {0} à {1} sur {2}"
-
-#~ msgid "Single organization"
-#~ msgstr "Organisation unique"
-
-#~ msgid "{} organizations"
-#~ msgstr "{} organisations"
-
-#~ msgid "Produced Datasets"
-#~ msgstr "Jeux de donnés produits"
-
-#~ msgid "Supplied Datasets"
-#~ msgstr "Jeux de données fournis"

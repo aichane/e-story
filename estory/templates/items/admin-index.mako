@@ -59,13 +59,20 @@ from estory import model, texthelpers, urls
         <table class="table table-bordered table-condensed table-striped">
             <thead>
                 <tr>
-                    <th>${_(u"User")}</th>
+                    <th>${_(u"Image")}</th>
             % if data['sort'] == 'slug':
                     <th>${_(u"Title")} <span class="glyphicon glyphicon-sort-by-attributes"></span></th>
             % else:
                     <th><a href="${model.Item.get_admin_class_url(ctx, **urls.relative_query(inputs, page = None,
                             sort = 'slug'))}">${_(u"Title")}</a></th>
             % endif
+            % if data['sort'] == 'temporal_coverage_from':
+                    <th>${_(u"Period")} <span class="glyphicon glyphicon-sort-by-attributes"></span></th>
+            % else:
+                    <th><a href="${model.Item.get_admin_class_url(ctx, **urls.relative_query(inputs, page = None,
+                            sort = 'temporal_coverage_from'))}">${_(u"Period")}</a></th>
+            % endif
+                    <th>${_(u"User")}</th>
             % if data['sort'] == 'timestamp':
                     <th>${_(u"Last Modification")} <span class="glyphicon glyphicon-sort-by-attributes-alt"></span></th>
             % else:
@@ -78,10 +85,9 @@ from estory import model, texthelpers, urls
         % for item in items:
                 <tr>
                     <td>
-<%
-            user = item.get_user(ctx)
-%>\
-                        ${user.full_name if user is not None else item.user_id or u''}
+            % if item.image_url is not None:
+                        <a href="${item.get_admin_url(ctx)}"><img class="img-responsive" style="max-width: 100px" src="${item.image_url}"></a>
+            % endif
                     </td>
                     <td>
                         <h4><a href="${item.get_admin_url(ctx)}">${item.title}</a></h4>
@@ -115,6 +121,17 @@ from estory import model, texthelpers, urls
                 % endif
                         </ul>
             % endif
+                    </td>
+                    <td>${u' - '.join(
+                        fragment
+                        for fragment in (item.temporal_coverage_from, item.temporal_coverage_to)
+                        if fragment
+                        )}</td>
+                    <td>
+<%
+            user = item.get_user(ctx)
+%>\
+                        ${user.full_name if user is not None else item.user_id or u''}
                     </td>
                     <td>${item.timestamp or ''}</td>
                 </tr>
