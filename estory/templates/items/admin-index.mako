@@ -106,8 +106,11 @@ from estory import model, texthelpers, urls
                                         _(u"Temporal coverage")}">
                                     <span class="glyphicon glyphicon-calendar"></span>
                                 </a>
-                                ${_(u"{0} to {1}").format(item.temporal_coverage_from or _(u"…"),
-                                    item.temporal_coverage_to or _(u"…"))}
+                    % if item.temporal_coverage_to:
+                                ${_(u"{0} to {1}").format(item.temporal_coverage_from or _(u"…"), item.temporal_coverage_to)}
+                    % else:
+                                ${item.temporal_coverage_from}
+                    % endif
                             </li>
                 % endif
                 % if item.territorial_coverage is not None:
