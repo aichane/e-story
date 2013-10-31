@@ -668,7 +668,10 @@ def api1_index(req):
         format = conv.pipe(
             conv.test_isinstance(basestring),
             conv.input_to_slug,
-            conv.test_in(['atom', 'json']),  # When None, return only the IDs of the items.
+            conv.test_in([
+#                'atom',
+#                'json',
+                ]),  # When None, return only the IDs of the items.
             ),
         group = conv.pipe(
             conv.test_isinstance(basestring),

@@ -485,6 +485,7 @@ def api1_index(req):
     inputs = dict(
         callback = params.get('callback'),
         context = params.get('context'),
+        format = params.get('format'),
         )
     data, errors = conv.pipe(
         conv.struct(
@@ -494,6 +495,14 @@ def api1_index(req):
                     conv.cleanup_line,
                     ),
                 context = conv.test_isinstance(basestring),
+        format = conv.pipe(
+            conv.test_isinstance(basestring),
+            conv.input_to_slug,
+            conv.test_in([
+#                'atom',
+#                'json',
+                ]),  # When None, return only the IDs of the items.
+            ),
                 ),
             ),
         )(inputs, state = ctx)

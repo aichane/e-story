@@ -95,10 +95,10 @@ ${conf['realm']}
 
 
 <%def name="feeds()" filter="trim">
-    <link href="${urls.get_url(ctx, 'api', '1', 'items', format = 'atom')}" rel="alternate" title="${
-            _(u'{} - Items Atom feed').format(conf['realm'])}" type="application/atom+xml">
-    <link href="${urls.get_url(ctx, 'api', '1', 'lessons', format = 'atom')}" rel="alternate" title="${
-            _(u'{} - Lessons Atom feed').format(conf['realm'])}" type="application/atom+xml">
+##    <link href="${urls.get_url(ctx, 'api', '1', 'items', format = 'atom')}" rel="alternate" title="${
+##            _(u'{} - Items Atom feed').format(conf['realm'])}" type="application/atom+xml">
+##    <link href="${urls.get_url(ctx, 'api', '1', 'lessons', format = 'atom')}" rel="alternate" title="${
+##            _(u'{} - Lessons Atom feed').format(conf['realm'])}" type="application/atom+xml">
 </%def>
 
 
