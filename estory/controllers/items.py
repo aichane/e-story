@@ -673,40 +673,19 @@ def api1_index(req):
 #                'json',
                 ]),  # When None, return only the IDs of the items.
             ),
-        group = conv.pipe(
-            conv.test_isinstance(basestring),
-            conv.input_to_slug,
-            model.Group.make_id_or_slug_to_instance(),
-            ),
-        organization = conv.pipe(
-            conv.test_isinstance(basestring),
-            conv.input_to_slug,
-            model.Organization.make_id_or_slug_to_instance(),
-            ),
         page = conv.pipe(
             conv.anything_to_int,
             conv.test_greater_or_equal(1),
             # conv.default(1),  # Set below.
             ),
-        related = conv.guess_bool,
         sort = conv.pipe(
             conv.test_isinstance(basestring),
             conv.cleanup_line,
             conv.test_in(['slug', 'timestamp']),
             ),
-        supplier = conv.pipe(
-            conv.test_isinstance(basestring),
-            conv.input_to_slug,
-            model.Organization.make_id_or_slug_to_instance(),
-            ),
         tag = conv.pipe(
             conv.test_isinstance(basestring),
             conv.input_to_slug,
-            ),
-        target = conv.pipe(
-            conv.test_isinstance(basestring),
-            conv.cleanup_line,
-            conv.test_in(['back', 'front']),
             ),
         term = conv.pipe(
             conv.test_isinstance(basestring),
@@ -800,14 +779,6 @@ def api1_index(req):
     data['page_number'] = data.pop('page')
 
     criteria = {}
-    if data['group'] is not None:
-        criteria['groups.id'] = data['group']._id
-    if data['organization'] is not None:
-        criteria['owner_org'] = data['organization']._id
-    if data['supplier'] is not None:
-        criteria['supplier_id'] = data['supplier']._id
-    if data['related'] is not None:
-        criteria['related'] = {'$exists': data['related']}
     if data['tag'] is not None:
         criteria['tags'] = re.compile(re.escape(data['tag']))
     if data['term'] is not None:
